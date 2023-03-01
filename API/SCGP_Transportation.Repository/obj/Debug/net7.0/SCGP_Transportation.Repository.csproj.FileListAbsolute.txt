@@ -1,0 +1,17 @@
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\bin\Debug\net7.0\SCGP_Transportation.Repository.deps.json
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\bin\Debug\net7.0\SCGP_Transportation.Repository.runtimeconfig.json
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\bin\Debug\net7.0\SCGP_Transportation.Repository.dll
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\bin\Debug\net7.0\SCGP_Transportation.Repository.pdb
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\bin\Debug\net7.0\SCGP_Transportation.Core.dll
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\bin\Debug\net7.0\SCGP_Transportation.Core.pdb
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\SCGP_Transportation.Repository.csproj.AssemblyReference.cache
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\SCGP_Transportation.Repository.GeneratedMSBuildEditorConfig.editorconfig
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\SCGP_Transportation.Repository.AssemblyInfoInputs.cache
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\SCGP_Transportation.Repository.AssemblyInfo.cs
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\SCGP_Transportation.Repository.csproj.CoreCompileInputs.cache
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\SCGP_Transportation.Repository.csproj.CopyComplete
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\SCGP_Transportation.Repository.dll
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\refint\SCGP_Transportation.Repository.dll
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\SCGP_Transportation.Repository.pdb
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\SCGP_Transportation.Repository.genruntimeconfig.cache
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Repository\obj\Debug\net7.0\ref\SCGP_Transportation.Repository.dll

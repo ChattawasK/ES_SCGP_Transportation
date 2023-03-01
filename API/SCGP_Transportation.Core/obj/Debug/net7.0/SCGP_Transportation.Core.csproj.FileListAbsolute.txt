@@ -1,0 +1,14 @@
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\bin\Debug\net7.0\SCGP_Transportation.Core.deps.json
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\bin\Debug\net7.0\SCGP_Transportation.Core.runtimeconfig.json
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\bin\Debug\net7.0\SCGP_Transportation.Core.dll
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\bin\Debug\net7.0\SCGP_Transportation.Core.pdb
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\SCGP_Transportation.Core.csproj.AssemblyReference.cache
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\SCGP_Transportation.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\SCGP_Transportation.Core.AssemblyInfoInputs.cache
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\SCGP_Transportation.Core.AssemblyInfo.cs
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\SCGP_Transportation.Core.csproj.CoreCompileInputs.cache
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\SCGP_Transportation.Core.dll
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\refint\SCGP_Transportation.Core.dll
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\SCGP_Transportation.Core.pdb
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\SCGP_Transportation.Core.genruntimeconfig.cache
+D:\Works\SCG\ES_SCGP_Transportation\API\SCGP_Transportation.Core\obj\Debug\net7.0\ref\SCGP_Transportation.Core.dll

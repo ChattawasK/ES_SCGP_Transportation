@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\SCGP_Transportation.props" />
+</Project>
