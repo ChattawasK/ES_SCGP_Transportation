@@ -1,38 +1,47 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
 
-API/SCGP_Transportation.Core/bin/Debug/net7.0/SCGP_Transportation.Core.dll
-API/SCGP_Transportation.Core/bin/Debug/net7.0/SCGP_Transportation.Core.pdb
-API/SCGP_Transportation.Core/obj/Debug/net7.0/ref/SCGP_Transportation.Core.dll
-API/SCGP_Transportation.Core/obj/Debug/net7.0/refint/SCGP_Transportation.Core.dll
-API/SCGP_Transportation.Core/obj/Debug/net7.0/SCGP_Transportation.Core.dll
-API/SCGP_Transportation.Core/obj/Debug/net7.0/SCGP_Transportation.Core.pdb
-API/SCGP_Transportation.Repository/bin/Debug/net7.0/SCGP_Transportation.Core.dll
-API/SCGP_Transportation.Repository/bin/Debug/net7.0/SCGP_Transportation.Core.pdb
-API/SCGP_Transportation.Repository/bin/Debug/net7.0/SCGP_Transportation.Repository.dll
-API/SCGP_Transportation.Repository/bin/Debug/net7.0/SCGP_Transportation.Repository.pdb
-API/SCGP_Transportation.Repository/obj/Debug/net7.0/SCGP_Transportation.Repository.csproj.AssemblyReference.cache
-API/SCGP_Transportation.Repository/obj/Debug/net7.0/SCGP_Transportation.Repository.dll
-API/SCGP_Transportation.Repository/obj/Debug/net7.0/SCGP_Transportation.Repository.pdb
-API/SCGP_Transportation.Service/bin/Debug/net7.0/SCGP_Transportation.Core.dll
-API/SCGP_Transportation.Service/bin/Debug/net7.0/SCGP_Transportation.Core.pdb
-API/SCGP_Transportation.Service/bin/Debug/net7.0/SCGP_Transportation.Repository.dll
-API/SCGP_Transportation.Service/bin/Debug/net7.0/SCGP_Transportation.Repository.pdb
-API/SCGP_Transportation.Service/bin/Debug/net7.0/SCGP_Transportation.Service.dll
-API/SCGP_Transportation.Service/bin/Debug/net7.0/SCGP_Transportation.Service.pdb
-API/SCGP_Transportation.Service/obj/Debug/net7.0/SCGP_Transportation.Service.csproj.AssemblyReference.cache
-API/SCGP_Transportation.Service/obj/Debug/net7.0/SCGP_Transportation.Service.dll
-API/SCGP_Transportation.Service/obj/Debug/net7.0/SCGP_Transportation.Service.pdb
-API/SCGP_Transportation/bin/Debug/net7.0/SCGP_Transportation.Core.dll
-API/SCGP_Transportation/bin/Debug/net7.0/SCGP_Transportation.Core.pdb
-API/SCGP_Transportation/bin/Debug/net7.0/SCGP_Transportation.dll
-API/SCGP_Transportation/bin/Debug/net7.0/SCGP_Transportation.pdb
-API/SCGP_Transportation/bin/Debug/net7.0/SCGP_Transportation.Repository.dll
-API/SCGP_Transportation/bin/Debug/net7.0/SCGP_Transportation.Repository.pdb
-API/SCGP_Transportation/bin/Debug/net7.0/SCGP_Transportation.Service.dll
-API/SCGP_Transportation/bin/Debug/net7.0/SCGP_Transportation.Service.pdb
-API/SCGP_Transportation/obj/Debug/net7.0/project.razor.json
-API/SCGP_Transportation/obj/Debug/net7.0/ref/SCGP_Transportation.dll
-API/SCGP_Transportation/obj/Debug/net7.0/refint/SCGP_Transportation.dll
-API/SCGP_Transportation/obj/Debug/net7.0/SCGP_Transportation.csproj.AssemblyReference.cache
-API/SCGP_Transportation/obj/Debug/net7.0/SCGP_Transportation.dll
-API/SCGP_Transportation/obj/Debug/net7.0/SCGP_Transportation.pdb
-*.cache
+# compiled output
+/dist
+/tmp
+/out-tsc
+# Only exists if Bazel was run
+/bazel-out
+
+# dependencies
+/node_modules
+
+# profiling files
+chrome-profiler-events*.json
+speed-measure-plugin*.json
+
+# IDEs and editors
+/.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# IDE - VSCode
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.history/*
+
+# misc
+/.angular/cache
+/.sass-cache
+/connect.lock
+/coverage
+/libpeerconnection.log
+npm-debug.log
+yarn-error.log
+testem.log
+/typings
+
+# System Files
+.DS_Store
+Thumbs.db
