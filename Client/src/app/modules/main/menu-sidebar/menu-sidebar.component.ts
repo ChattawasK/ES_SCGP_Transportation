@@ -23,39 +23,66 @@ export class MenuSidebarComponent implements OnInit {
     ) {}
 
     ngOnInit() {
-        this.ui = this.store.select('ui');
-        this.ui.subscribe((state: UiState) => {
-            this.classes = `${BASE_CLASSES} ${state.sidebarSkin}`;
-        });
         this.user = this.appService.user;
     }
 }
 
 export const MENU = [
     {
-        name: 'Dashboard',
-        iconClasses: 'fas fa-tachometer-alt',
+        name: 'Home',
+        iconClasses: 'fa fa-home',
         path: ['/']
     },
     {
-        name: 'Blank',
-        iconClasses: 'fas fa-file',
+        name: 'Driver',
+        iconClasses: 'fas fa-id-card',
+        children: [
+            {
+                name: 'Qualification And Training Record',
+                iconClasses: '',
+                path: ['/qualification-and-training-record']
+            },
+            {
+                name: 'Qualification And Training Record List',
+                iconClasses: '',
+                path: ['/qualification-and-training-record-list']
+            },
+            {
+                name: 'Mapping Driver',
+                iconClasses: '',
+                path: ['/mapping-driver']
+            },
+            {
+                name: 'Qualification And Training Request ',
+                iconClasses: '',
+                path: ['/qualification-and-training-request']
+            }
+        ]
+    },
+    {
+        name: 'Truck/Vehicle',
+        iconClasses: 'fas fa-truck',
         path: ['/blank']
     },
     {
-        name: 'Main Menu',
-        iconClasses: 'fas fa-folder',        
-        children: [
-            {
-                name: 'Sub Menu',
-                iconClasses: 'far fa-address-book',
-                path: ['/sub-menu-1']
-            },
-            {
-                name: 'Blank',
-                iconClasses: 'fas fa-file',
-                path: ['/sub-menu-2']
-            }
-        ]
+        name: 'LCC/Mileage',
+        iconClasses: 'fa fa-file',
+        path: ['/blank']
+    },
+    {
+        name: 'Dashboard',
+        iconClasses: 'fa fa-rss',
+        path: ['/blank']
+    },
+    {
+        name: 'Master',
+        iconClasses: 'fa fa-cog',
+        path: ['/blank']
+    },
+    {
+        name: 'User',
+        iconClasses: 'fa fa-user',
+        path: ['/blank']
     }
-];
+  ];
+

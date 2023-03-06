@@ -1,3 +1,7 @@
+import { QualificationAndTrainingRequestComponent } from './pages/driver/qualification-and-training-request/qualification-and-training-request.component';
+import { MappingDriverComponent } from './pages/driver/mapping-driver/mapping-driver.component';
+import { QualificationAndTrainingRecordComponent } from './pages/driver/qualification-and-training-record/qualification-and-training-record.component';
+import { HomeComponent } from './pages/home/home.component';
 import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
 import {MainComponent} from '@modules/main/main.component';
@@ -12,6 +16,7 @@ import {ForgotPasswordComponent} from '@modules/forgot-password/forgot-password.
 import {RecoverPasswordComponent} from '@modules/recover-password/recover-password.component';
 import {MainMenuComponent} from '@pages/main-menu/main-menu.component';
 import {SubMenuComponent} from '@pages/main-menu/sub-menu/sub-menu.component';
+import { QualificationAndTrainingRecordListComponent } from '@pages/driver/qualification-and-training-record-list/qualification-and-training-record-list.component';
 
 const routes: Routes = [
     {
@@ -21,31 +26,43 @@ const routes: Routes = [
         canActivateChild: [AuthGuard],
         children: [
             {
-                path: 'profile',
-                component: ProfileComponent
+              path: 'main',
+              component: MainMenuComponent
             },
             {
-                path: 'blank',
-                component: BlankComponent
+              path: 'blank',
+              component: BlankComponent
             },
             {
-                path: 'sub-menu-1',
-                component: SubMenuComponent
+              path: 'sub-menu-1',
+              component: SubMenuComponent
             },
             {
-                path: 'sub-menu-2',
-                component: BlankComponent
+              path: 'qualification-and-training-record',
+              component: QualificationAndTrainingRecordComponent
             },
             {
-                path: '',
-                component: DashboardComponent
+              path: 'qualification-and-training-record-list',
+              component: QualificationAndTrainingRecordListComponent
+            },
+            {
+              path: 'mapping-driver',
+              component: MappingDriverComponent
+            },
+            {
+              path: 'qualification-and-training-request',
+              component: QualificationAndTrainingRequestComponent
+            },
+            {
+              path: '',
+              component: HomeComponent
             }
         ]
     },
     {
         path: 'login',
         component: LoginComponent,
-        canActivate: [NonAuthGuard]
+        canActivate: []
     },
     {
         path: 'register',

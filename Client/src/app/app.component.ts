@@ -10,7 +10,15 @@ export class AppComponent {
     constructor(
         public translate: TranslateService
     ) {
-        translate.addLangs(['en', 'nl']);
-        translate.setDefaultLang('en');
+      translate.addLangs(['en', 'th']);
+      if (localStorage.getItem('language')){
+        const language = localStorage.getItem('language');
+        translate.setDefaultLang(language);
+      }
+      else{
+        translate.setDefaultLang('th');
+      }
+
+
     }
 }

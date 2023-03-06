@@ -1,3 +1,4 @@
+import { HomeComponent } from './pages/home/home.component';
 import {BrowserModule} from '@angular/platform-browser';
 import {NgModule} from '@angular/core';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
@@ -10,7 +11,7 @@ import {HeaderComponent} from '@modules/main/header/header.component';
 import {FooterComponent} from '@modules/main/footer/footer.component';
 import {MenuSidebarComponent} from '@modules/main/menu-sidebar/menu-sidebar.component';
 import {BlankComponent} from '@pages/blank/blank.component';
-import {ReactiveFormsModule} from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {ProfileComponent} from '@pages/profile/profile.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {RegisterComponent} from '@modules/register/register.component';
@@ -37,7 +38,10 @@ import {defineCustomElements} from '@profabric/web-components/loader';
 import {SidebarSearchComponent} from './components/sidebar-search/sidebar-search.component';
 import { TranslateLoader, TranslateModule } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
-
+import { QualificationAndTrainingRecordComponent } from '@pages/driver/qualification-and-training-record/qualification-and-training-record.component';
+import { NgbDateStruct, NgbCalendar, NgbDatepickerModule, NgbModule, NgbCalendarHebrew, NgbDatepickerI18n, NgbDatepickerI18nHebrew, NgbCalendarBuddhist, NgbDateAdapter, NgbDateParserFormatter } from '@ng-bootstrap/ng-bootstrap';
+import { NgbDatepickerI18nBuddhist } from '@components/datepicker-buddhist/datepicker-buddhist';
+import { CustomAdapter, CustomDateParserFormatter } from '@components/datepicker-buddhist/datepicker-adapter';
 defineCustomElements();
 registerLocaleData(localeEn, 'en-EN');
 
@@ -63,15 +67,19 @@ registerLocaleData(localeEn, 'en-EN');
         SubMenuComponent,
         MenuItemComponent,
         ControlSidebarComponent,
-        SidebarSearchComponent
+        SidebarSearchComponent,
+        HomeComponent,
+        QualificationAndTrainingRecordComponent
     ],
     imports: [
         BrowserModule,
+        FormsModule,
         StoreModule.forRoot({auth: authReducer, ui: uiReducer}),
         HttpClientModule,
         AppRoutingModule,
         ReactiveFormsModule,
         BrowserAnimationsModule,
+        NgbDatepickerModule,
         ToastrModule.forRoot({
             timeOut: 3000,
             positionClass: 'toast-top-right',
@@ -84,9 +92,15 @@ registerLocaleData(localeEn, 'en-EN');
                 useFactory: httpTranslateLoader,
                 deps: [HttpClient]
             }
-        })
+        }),
+        NgbModule,
     ],
-    providers: [],
+    providers: [
+      { provide: NgbCalendar, useClass: NgbCalendarBuddhist },
+      { provide: NgbDatepickerI18n, useClass: NgbDatepickerI18nBuddhist },
+      { provide: NgbDateAdapter, useClass: CustomAdapter },
+		  { provide: NgbDateParserFormatter, useClass: CustomDateParserFormatter },
+    ],
     bootstrap: [AppComponent]
 })
 

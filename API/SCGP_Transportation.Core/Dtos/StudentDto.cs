@@ -1,3 +1,4 @@
+using System.Globalization;
 using System.ComponentModel.DataAnnotations;
 
 namespace SCGP_Transportation.Core.Dtos
@@ -7,6 +8,7 @@ namespace SCGP_Transportation.Core.Dtos
         public int Id { get; set; }
         public string? Name { get; set; }
         public string? Class { get; set; }
+        public ThaiBuddhistCalendar BirthDate { get; set; }
 	}
 
     public class StudentCreationDto : StudentAddUpdateDto

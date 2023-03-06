@@ -1,0 +1,154 @@
+<!-- Content Header (Page header) -->
+<section class="content-header">
+  <div class="container-fluid">
+      <div class="row mb-2">
+          <div class="col-sm-6">
+              <ol class="breadcrumb">
+                  <li class="breadcrumb-item">Driver</li>
+                  <li class="breadcrumb-item">Qualification and Training Record</li>
+              </ol>
+          </div>
+      </div>
+  </div>
+  <!-- /.container-fluid -->
+</section>
+
+<!-- Main content -->
+<section class="content border border-secondary mx-3 p-0">
+  <div class="row" style="margin: 0 0">
+    <div class="col-12" style="background-color: 	Silver" align="center">
+      <label style="margin-top:5px">กรุณาทำแบบสอบถาม เพื่อเป็นข้อมูลผู้ขับขี่รถที่ขนส่งสินค้า เพื่อทำงานรวมกับในเครือของ SCP Packing</label>
+    </div>
+  </div>
+  <div class="row justify-content-md-center my-2">
+    <div class="col-md-6">
+      <div class="input-group mb-3">
+        <div class="input-group-append">
+          <div class="input-group-text bg-sky-blue">
+              <span class="fas fa-id-card blue"></span>
+          </div>
+        </div>
+        <input type="text" class="form-control">
+        <div class="input-group-append">
+          <button type="submit" class="btn bg-blue btn-block">ค้นหา
+            <i class="fa fa-search"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <form class="mx-4">
+    <fieldset>
+      <legend>1. ข้อมูลส่วนตัว</legend>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">1.1 ชื่อ</label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control" >
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">1.2 นามสกุล</label>
+            <div class="col-sm-9">
+              <input type="password" class="form-control">
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">1.3 เพศ</label>
+            <div class="col-sm-9">
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                <label class="form-check-label" for="inlineRadio1">ชาย</label>
+              </div>
+              <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                <label class="form-check-label" for="inlineRadio2">หญิง</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">1.4 วัน/เดือน/ปี เกิด</label>
+            <div class="col-sm-9">
+              <div class="input-group">
+                <input
+                  class="form-control"
+                  name="dp"
+                  [(ngModel)]="model"
+                  ngbDatepicker
+                  #d="ngbDatepicker"
+                />
+                <button class="btn btn-outline-secondary fa fa-calendar" (click)="d.toggle()" type="button"></button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">1.5 น้ำหนัก</label>
+            <div class="col-sm-9">
+              <div class="input-group">
+                <input type="password" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">กก.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">1.6 ส่วนสูง</label>
+            <div class="col-sm-9">
+              <div class="input-group">
+                <input type="password" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">ซม.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">1.5 น้ำหนัก</label>
+            <div class="col-sm-9">
+              <div class="input-group">
+                <input type="password" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">กก.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="form-group row">
+            <label for="inputPassword" class="col-sm-3 col-form-label">1.6 ส่วนสูง</label>
+            <div class="col-sm-9">
+              <div class="input-group">
+                <input type="password" class="form-control" >
+                <div class="input-group-append">
+                  <span class="input-group-text">ซม.</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </fieldset>
+  </form>
+</section>
+<!-- /.content -->

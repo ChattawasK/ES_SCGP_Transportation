@@ -45,6 +45,12 @@ namespace SCGP_Transportation.Controllers
             return NoContent();
         }
 
+        [HttpPost("test")]
+        public async Task<IActionResult> Test([FromBody] StudentDto student)
+        {
+            return NoContent();
+        }
+
 
         [HttpGet]
         [ServiceFilter(typeof(ValidateStudentExistsForTeacher))]

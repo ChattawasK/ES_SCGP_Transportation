@@ -24,10 +24,6 @@ export class HeaderComponent implements OnInit {
     ) {}
 
     ngOnInit() {
-        this.ui = this.store.select('ui');
-        this.ui.subscribe((state: UiState) => {
-            this.classes = `${BASE_CLASSES} ${state.navbarVariant}`;
-        });
         this.searchForm = new UntypedFormGroup({
             search: new UntypedFormControl(null)
         });

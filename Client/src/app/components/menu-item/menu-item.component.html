@@ -4,7 +4,7 @@
     [ngClass]="{active: isMainActive || isOneOfChildrenActive}"
 >
     <i class="nav-icon {{ menuItem.iconClasses }}"></i>
-    <p>{{ menuItem.name }}
+    <p>{{menuItem.name | translate }}
         <i
             *ngIf="isExpandable && menuItem.children.length > 0"
             class="right fas fa-angle-right"
@@ -19,7 +19,7 @@
             [routerLinkActive]="'active'"
             class="nav-link"
         >
-            <i class="nav-icon {{ item.iconClasses }}"></i>
+            <i *ngIf="item.iconClasses" class="nav-icon {{ item.iconClasses }}"></i>
             <p>{{ item.name }}</p>
         </a>
     </li>
