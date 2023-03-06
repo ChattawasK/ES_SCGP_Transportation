@@ -35,3 +35,4 @@ API/SCGP_Transportation/obj/Debug/net7.0/refint/SCGP_Transportation.dll
 API/SCGP_Transportation/obj/Debug/net7.0/SCGP_Transportation.csproj.AssemblyReference.cache
 API/SCGP_Transportation/obj/Debug/net7.0/SCGP_Transportation.dll
 API/SCGP_Transportation/obj/Debug/net7.0/SCGP_Transportation.pdb
+*.cache
