@@ -1,0 +1,49 @@
+<div class="login">
+    <div class="card card-outline card-primary login-box center-screen">
+        <div class="card-header text-center">
+            <img src="assets/img/site-logo-login.png" height="80px">
+            <label class="h3 blue">Transportation Safety Platform</label>
+        </div>
+        <div class="card-body">
+            <p class="login-box-msg h3 text-bold">Sign in</p>
+            <form [formGroup]="loginForm" (ngSubmit)="loginByAuth()">
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <div class="input-group-text bg-sky-blue">
+                            <span class="fas fa-user blue"></span>
+                        </div>
+                    </div>
+                    <input
+                        formControlName="email"
+                        type="email"
+                        class="form-control"
+                        placeholder="Username"
+                    />
+                </div>
+                <div class="input-group mb-3">
+                    <div class="input-group-append">
+                        <div class="input-group-text bg-sky-blue">
+                            <span class="fas fa-lock blue"></span>
+                        </div>
+                    </div>
+                    <input
+                        formControlName="password"
+                        type="password"
+                        class="form-control"
+                        placeholder="Password"
+                    />
+                    
+                </div>
+                <div class="row">
+                    <!-- /.col -->
+                    <div class="col-12">
+                        <button type="submit" class="btn bg-blue btn-block"> Sign In</button>
+                    </div>
+                    <!-- /.col -->
+                </div>
+            </form>
+        </div>
+        <!-- /.login-card-body -->
+    </div>
+</div>
+

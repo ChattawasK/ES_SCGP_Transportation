@@ -1,0 +1,18 @@
+<pf-dropdown hide-arrow>
+    <div slot="button">
+        <a class="nav-link">
+            <i class="flag-icon flag-icon-th" *ngIf="language == 'th'"></i>
+            <i class="flag-icon flag-icon-us" *ngIf="language == 'en'"></i>
+        </a>
+    </div>
+    <div slot="menu">
+        <a class="dropdown-item" (click)="switchLang('th')">
+            <i class="flag-icon flag-icon-th mr-2"></i>
+            <span>Thailand</span>
+        </a>
+        <a class="dropdown-item" (click)="switchLang('en')">
+            <i class="flag-icon flag-icon-us mr-2"></i>
+            <span>English</span>
+        </a>
+    </div>
+</pf-dropdown>

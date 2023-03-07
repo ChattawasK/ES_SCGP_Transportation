@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+// @import '~bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+// @import '~bootstrap/scss/bootstrap';
+
+@import url('https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.3.0/css/flag-icon.min.css');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700');
+
+@import '~admin-lte/plugins/fontawesome-free/css/all.min.css';
+@import '~admin-lte/plugins/icheck-bootstrap/icheck-bootstrap.min.css';
+@import '~admin-lte/dist/css/adminlte.min.css';
+
+@import 'ngx-toastr/toastr';
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+.content {
+    padding: 0 0.5rem;
+}
+
+// Sidebar menu animation
+// Needed for open/close menu animation for menus with child nodes
+.nav .nav-item:not(.menu-open) > .ng-trigger-openClose,
+.nav .nav-item > .ng-trigger-openClose.ng-animating {
+    overflow: hidden;
+    display: block;
+}
+
+// Override original AdminLTE transform
+.nav-sidebar .menu-is-opening > .nav-link i.right,
+.nav-sidebar .menu-is-opening > .nav-link svg.right,
+.nav-sidebar .menu-open > .nav-link i.right,
+.nav-sidebar .menu-open > .nav-link svg.right {
+    transform: none;
+}
+
+//-------------------------------------
+
+$blue: #24247a;
+$sky-blue:#eeedff;
+
+//------------------------------------
+
+.login-box{
+    width: 450px;
+}
+
+.blue{
+    color: $blue !important;
+}
+
+.bg-blue{
+    background-color: $blue !important;
+}
+
+.bg-sky-blue{
+    background-color: $sky-blue !important;
+}
+
+.full{
+    width: 100%;
+    height: 100%;
+}
+
+.center-screen {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -225px;
+    width: 450px;
+}
+
+.breadcrumb-item{
+  font-size: 18px;
+  color: $blue !important;
+}
+
+.breadcrumb-item+.breadcrumb-item::before{
+  content: ">";
+}
+
+
+fieldset {
+  border: 1px groove #ddd !important;
+  padding: 0 1.4em 1.4em 1.4em !important;
+  margin: 0 0 1.5em 0 !important;
+  -webkit-box-shadow:  0px 0px 0px 0px #000;
+          box-shadow:  0px 0px 0px 0px #000;
+  border-radius: 5px;
+}
+
+legend {
+    font-size: 1.2em !important;
+    font-weight: bold !important;
+    text-align: left !important;
+    width:auto !important;
+    padding:0 10px;
+    border-bottom:none;
+}
+
+.nav-link{
+  color: $blue !important;
+}
+
+.nav-link.active{
+  background-color:$sky-blue !important;
+}
